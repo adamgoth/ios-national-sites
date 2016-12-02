@@ -12,6 +12,14 @@
 		F922ACAE1DF0E1D100F4FCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAC1DF0E1D100F4FCC0 /* Main.storyboard */; };
 		F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */; };
 		F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */; };
+		F957387B1DF125F0009D1ABA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957387A1DF125F0009D1ABA /* DataService.swift */; };
+		F9FE51541DF0E9CC00FDFF1A /* NationalMonuments.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */; };
+		F9FE51551DF0E9CC00FDFF1A /* NationalParks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */; };
+		F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51561DF0E9F600FDFF1A /* csv.swift */; };
+		F9FE51591DF0EA9200FDFF1A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */; };
+		F9FE515C1DF0EC7E00FDFF1A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE515B1DF0EC7E00FDFF1A /* Location.swift */; };
+		F9FE515E1DF0ED5900FDFF1A /* NationalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */; };
+		F9FE51601DF0ED9400FDFF1A /* NationalMonument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F922ACB21DF0E1D100F4FCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F922ACB41DF0E1D100F4FCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F957387A1DF125F0009D1ABA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalMonuments.csv; sourceTree = "<group>"; };
+		F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalParks.csv; sourceTree = "<group>"; };
+		F9FE51561DF0E9F600FDFF1A /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F9FE515B1DF0EC7E00FDFF1A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalPark.swift; sourceTree = "<group>"; };
+		F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalMonument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,54 @@
 		F922ACA71DF0E1D100F4FCC0 /* national-adventure-poc */ = {
 			isa = PBXGroup;
 			children = (
+				F95738791DF125C1009D1ABA /* Data Services */,
+				F9FE515A1DF0EC5E00FDFF1A /* Models */,
+				F9FE51511DF0E93B00FDFF1A /* Utilities */,
+				F9FE51501DF0E93400FDFF1A /* Resources */,
 				F922ACA81DF0E1D100F4FCC0 /* AppDelegate.swift */,
 				F922ACAA1DF0E1D100F4FCC0 /* ViewController.swift */,
+				F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */,
 				F922ACAC1DF0E1D100F4FCC0 /* Main.storyboard */,
 				F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */,
 				F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */,
 				F922ACB41DF0E1D100F4FCC0 /* Info.plist */,
 			);
 			path = "national-adventure-poc";
+			sourceTree = "<group>";
+		};
+		F95738791DF125C1009D1ABA /* Data Services */ = {
+			isa = PBXGroup;
+			children = (
+				F957387A1DF125F0009D1ABA /* DataService.swift */,
+			);
+			name = "Data Services";
+			sourceTree = "<group>";
+		};
+		F9FE51501DF0E93400FDFF1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */,
+				F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F9FE51511DF0E93B00FDFF1A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE51561DF0E9F600FDFF1A /* csv.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F9FE515A1DF0EC5E00FDFF1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE515B1DF0EC7E00FDFF1A /* Location.swift */,
+				F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */,
+				F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +179,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FE51541DF0E9CC00FDFF1A /* NationalMonuments.csv in Resources */,
 				F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */,
 				F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */,
 				F922ACAE1DF0E1D100F4FCC0 /* Main.storyboard in Resources */,
+				F9FE51551DF0E9CC00FDFF1A /* NationalParks.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */,
 				F922ACAB1DF0E1D100F4FCC0 /* ViewController.swift in Sources */,
+				F9FE515C1DF0EC7E00FDFF1A /* Location.swift in Sources */,
 				F922ACA91DF0E1D100F4FCC0 /* AppDelegate.swift in Sources */,
+				F9FE51591DF0EA9200FDFF1A /* TableViewController.swift in Sources */,
+				F9FE51601DF0ED9400FDFF1A /* NationalMonument.swift in Sources */,
+				F9FE515E1DF0ED5900FDFF1A /* NationalPark.swift in Sources */,
+				F957387B1DF125F0009D1ABA /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +363,7 @@
 				F922ACB91DF0E1D100F4FCC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
