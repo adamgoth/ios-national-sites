@@ -14,6 +14,7 @@
 		F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */; };
 		F957387B1DF125F0009D1ABA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957387A1DF125F0009D1ABA /* DataService.swift */; };
 		F98753981DF1BF5A0083C88D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753971DF1BF5A0083C88D /* Location.swift */; };
+		F987539A1DF245280083C88D /* SitesFilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753991DF245280083C88D /* SitesFilterTableViewController.swift */; };
 		F9FE51541DF0E9CC00FDFF1A /* NationalMonuments.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */; };
 		F9FE51551DF0E9CC00FDFF1A /* NationalParks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */; };
 		F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51561DF0E9F600FDFF1A /* csv.swift */; };
@@ -32,6 +33,7 @@
 		F922ACB41DF0E1D100F4FCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F957387A1DF125F0009D1ABA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F98753971DF1BF5A0083C88D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F98753991DF245280083C88D /* SitesFilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesFilterTableViewController.swift; sourceTree = "<group>"; };
 		F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalMonuments.csv; sourceTree = "<group>"; };
 		F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalParks.csv; sourceTree = "<group>"; };
 		F9FE51561DF0E9F600FDFF1A /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				F922ACA81DF0E1D100F4FCC0 /* AppDelegate.swift */,
 				F922ACAA1DF0E1D100F4FCC0 /* ViewController.swift */,
 				F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */,
+				F98753991DF245280083C88D /* SitesFilterTableViewController.swift */,
 				F922ACAC1DF0E1D100F4FCC0 /* Main.storyboard */,
 				F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */,
 				F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				TargetAttributes = {
 					F922ACA41DF0E1D100F4FCC0 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = M685F39Y73;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -197,6 +201,7 @@
 				F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */,
 				F922ACAB1DF0E1D100F4FCC0 /* ViewController.swift in Sources */,
 				F98753981DF1BF5A0083C88D /* Location.swift in Sources */,
+				F987539A1DF245280083C88D /* SitesFilterTableViewController.swift in Sources */,
 				F922ACA91DF0E1D100F4FCC0 /* AppDelegate.swift in Sources */,
 				F9FE51591DF0EA9200FDFF1A /* TableViewController.swift in Sources */,
 				F9FE51601DF0ED9400FDFF1A /* NationalMonument.swift in Sources */,
@@ -324,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M685F39Y73;
 				INFOPLIST_FILE = "national-adventure-poc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adamgoth.national-adventure-poc";
@@ -336,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M685F39Y73;
 				INFOPLIST_FILE = "national-adventure-poc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adamgoth.national-adventure-poc";

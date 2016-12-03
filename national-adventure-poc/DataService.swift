@@ -10,6 +10,16 @@ import Foundation
 import MapKit
 
 class DataService {
+
+    public enum SiteType: String {
+        case NationalPark = "National Parks"
+        case NationalMonument = "National Monuments"
+    }
+    public static var allSiteTypes: [SiteType] { return [
+        .NationalPark,
+        .NationalMonument
+        ]
+    }
     public static var allNationalParks = [NationalPark]()
     public static var allNationalMonuments = [NationalMonument]()
     

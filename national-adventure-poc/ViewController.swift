@@ -16,18 +16,47 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(filterSiteTypes))
+        
         createAnnotations()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        refreshAnnotations()
+    }
+    
+    func filterSiteTypes() {
+        performSegue(withIdentifier: "showSitesFilter", sender: self)
+    }
+    
     func createAnnotations() {
-        for park in DataService.allNationalParks {
-            let anno = park
-            mapView.addAnnotation(anno)
+        var selectedSiteTypes: [DataService.SiteType]!
+        let defaults = UserDefaults.standard
+        if let previousFilter = defaults.object(forKey: "filteredSiteTypes") as? [String] {
+            let mappedSites = previousFilter.map { return DataService.SiteType(rawValue: $0)! }
+            print(mappedSites)
+            selectedSiteTypes = mappedSites
+        } else {
+            print("nah")
+            selectedSiteTypes = DataService.allSiteTypes
         }
-        for park in DataService.allNationalMonuments {
-            let anno = park
-            mapView.addAnnotation(anno)
+        if selectedSiteTypes.contains(DataService.SiteType.NationalPark) {
+                for park in DataService.allNationalParks {
+                let anno = park
+                mapView.addAnnotation(anno)
+            }
         }
+        if selectedSiteTypes.contains(DataService.SiteType.NationalMonument) {
+            for park in DataService.allNationalMonuments {
+                let anno = park
+                mapView.addAnnotation(anno)
+            }
+        }
+    }
+    
+    func refreshAnnotations() {
+        mapView.removeAnnotations(mapView.annotations)
+        createAnnotations()
     }
 
 }

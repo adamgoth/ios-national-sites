@@ -39,11 +39,40 @@
                     <navigationItem key="navigationItem" id="kmi-im-KBJ"/>
                     <connections>
                         <outlet property="mapView" destination="xqB-Pf-H4c" id="1Jt-Kf-ROp"/>
+                        <segue destination="piV-Lv-Re2" kind="show" identifier="showSitesFilter" id="XZM-bR-fJt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Znz-6W-n42" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1544.8" y="-274.81259370314842"/>
+            <point key="canvasLocation" x="1674" y="-275"/>
+        </scene>
+        <!--Sites Filter Table View Controller-->
+        <scene sceneID="msO-NQ-1Nh">
+            <objects>
+                <tableViewController id="piV-Lv-Re2" customClass="SitesFilterTableViewController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QeR-0Z-349">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Jpu-Na-sCO">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jpu-Na-sCO" id="Iov-yJ-ePt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="piV-Lv-Re2" id="evy-hk-Yml"/>
+                            <outlet property="delegate" destination="piV-Lv-Re2" id="hKN-Og-AVT"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imm-k6-I0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2620" y="34"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VZB-cw-bkt">
@@ -114,7 +143,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Hs-qs-pLk" id="URI-k2-oUb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
