@@ -21,17 +21,11 @@ class ViewController: UIViewController {
     
     func createAnnotations() {
         for park in DataService.allNationalParks {
-            let location = CLLocation(latitude: park.latitude, longitude: park.longitude)
-            let anno = MKPointAnnotation()
-            anno.title = park.name
-            anno.coordinate = location.coordinate
+            let anno = park
             mapView.addAnnotation(anno)
         }
         for park in DataService.allNationalMonuments {
-            let location = CLLocation(latitude: park.latitude, longitude: park.longitude)
-            let anno = MKPointAnnotation()
-            anno.title = park.name
-            anno.coordinate = location.coordinate
+            let anno = park
             mapView.addAnnotation(anno)
         }
     }
@@ -40,15 +34,26 @@ class ViewController: UIViewController {
 
 extension ViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let reuseId = "pin"
-        var view = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+        let identifier = "pin"
+
+        var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
         
         if view == nil {
-            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view?.canShowCallout = true
         } else {
             view?.annotation = annotation
         }
+        
+        switch annotation {
+        case is NationalPark:
+            view?.image = UIImage(named: "tree")
+        case is NationalMonument:
+            view?.image = UIImage(named: "monument")
+        default:
+            view?.image = nil
+        }
+        view?.frame.size = CGSize(width: 20.0, height: 20.0)
         
         return view
     }

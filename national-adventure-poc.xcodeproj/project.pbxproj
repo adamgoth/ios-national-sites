@@ -13,11 +13,11 @@
 		F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */; };
 		F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */; };
 		F957387B1DF125F0009D1ABA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957387A1DF125F0009D1ABA /* DataService.swift */; };
+		F98753981DF1BF5A0083C88D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753971DF1BF5A0083C88D /* Location.swift */; };
 		F9FE51541DF0E9CC00FDFF1A /* NationalMonuments.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */; };
 		F9FE51551DF0E9CC00FDFF1A /* NationalParks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */; };
 		F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51561DF0E9F600FDFF1A /* csv.swift */; };
 		F9FE51591DF0EA9200FDFF1A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */; };
-		F9FE515C1DF0EC7E00FDFF1A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE515B1DF0EC7E00FDFF1A /* Location.swift */; };
 		F9FE515E1DF0ED5900FDFF1A /* NationalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */; };
 		F9FE51601DF0ED9400FDFF1A /* NationalMonument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */; };
 /* End PBXBuildFile section */
@@ -31,11 +31,11 @@
 		F922ACB21DF0E1D100F4FCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F922ACB41DF0E1D100F4FCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F957387A1DF125F0009D1ABA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F98753971DF1BF5A0083C88D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalMonuments.csv; sourceTree = "<group>"; };
 		F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalParks.csv; sourceTree = "<group>"; };
 		F9FE51561DF0E9F600FDFF1A /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		F9FE515B1DF0EC7E00FDFF1A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalPark.swift; sourceTree = "<group>"; };
 		F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalMonument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,9 +113,9 @@
 		F9FE515A1DF0EC5E00FDFF1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F9FE515B1DF0EC7E00FDFF1A /* Location.swift */,
 				F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */,
 				F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */,
+				F98753971DF1BF5A0083C88D /* Location.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 			files = (
 				F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */,
 				F922ACAB1DF0E1D100F4FCC0 /* ViewController.swift in Sources */,
-				F9FE515C1DF0EC7E00FDFF1A /* Location.swift in Sources */,
+				F98753981DF1BF5A0083C88D /* Location.swift in Sources */,
 				F922ACA91DF0E1D100F4FCC0 /* AppDelegate.swift in Sources */,
 				F9FE51591DF0EA9200FDFF1A /* TableViewController.swift in Sources */,
 				F9FE51601DF0ED9400FDFF1A /* NationalMonument.swift in Sources */,

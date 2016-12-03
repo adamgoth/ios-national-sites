@@ -24,7 +24,7 @@ class DataService {
                     let latitude = CLLocationDegrees(row["Latitude"]!)!
                     let longitude = CLLocationDegrees(row["Longitude"]!)!
                     
-                    let park = NationalPark(name: name, latitude: latitude, longitude: longitude)
+                    let park = NationalPark(title: name, latitude: latitude, longitude: longitude, pinColor: UIColor.green)
                     
                     DataService.allNationalParks.append(park)
                 }
@@ -45,7 +45,7 @@ class DataService {
                     let latitude = CLLocationDegrees(row["Latitude"]!)!
                     let longitude = CLLocationDegrees(row["Longitude"]!)!
                     
-                    let monument = NationalMonument(name: name, latitude: latitude, longitude: longitude)
+                    let monument = NationalMonument(title: name, latitude: latitude, longitude: longitude, pinColor: UIColor.red)
                     
                     DataService.allNationalMonuments.append(monument)
                 }

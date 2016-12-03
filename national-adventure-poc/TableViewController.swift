@@ -21,7 +21,7 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = DataService.allNationalParks[indexPath.row].name
+        cell.textLabel?.text = DataService.allNationalParks[indexPath.row].title
         return cell
     }
 
