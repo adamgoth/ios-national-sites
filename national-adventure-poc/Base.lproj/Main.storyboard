@@ -154,10 +154,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="1KQ-Wk-iuU"/>
+                    <connections>
+                        <segue destination="piV-Lv-Re2" kind="show" identifier="showSitesFilter" id="mVT-Lc-eqR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfG-Ux-ddu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1545" y="378"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mVT-Lc-eqR"/>
+    </inferredMetricsTieBreakers>
 </document>

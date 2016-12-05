@@ -34,10 +34,8 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         if let previousFilter = defaults.object(forKey: "filteredSiteTypes") as? [String] {
             let mappedSites = previousFilter.map { return DataService.SiteType(rawValue: $0)! }
-            print(mappedSites)
             selectedSiteTypes = mappedSites
         } else {
-            print("nah")
             selectedSiteTypes = DataService.allSiteTypes
         }
         if selectedSiteTypes.contains(DataService.SiteType.NationalPark) {
@@ -48,6 +46,12 @@ class ViewController: UIViewController {
         }
         if selectedSiteTypes.contains(DataService.SiteType.NationalMonument) {
             for park in DataService.allNationalMonuments {
+                let anno = park
+                mapView.addAnnotation(anno)
+            }
+        }
+        if selectedSiteTypes.contains(DataService.SiteType.NationalPreserve) {
+            for park in DataService.allNationalPreserves {
                 let anno = park
                 mapView.addAnnotation(anno)
             }
@@ -79,6 +83,8 @@ extension ViewController: MKMapViewDelegate {
             view?.image = UIImage(named: "tree")
         case is NationalMonument:
             view?.image = UIImage(named: "monument")
+        case is NationalPreserve:
+            view?.image = UIImage(named: "eagle")
         default:
             view?.image = nil
         }

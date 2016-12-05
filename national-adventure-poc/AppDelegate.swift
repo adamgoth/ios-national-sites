@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         DataService.parseNationalParks()
         DataService.parseNationalMonuments()
+        DataService.parseNationalPreserves()
         
         return true
     }

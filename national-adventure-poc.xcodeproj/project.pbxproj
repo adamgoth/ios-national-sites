@@ -12,6 +12,8 @@
 		F922ACAE1DF0E1D100F4FCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAC1DF0E1D100F4FCC0 /* Main.storyboard */; };
 		F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */; };
 		F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */; };
+		F952DEAF1DF335DB009D582E /* NationalPreserves.csv in Resources */ = {isa = PBXBuildFile; fileRef = F952DEAE1DF335DB009D582E /* NationalPreserves.csv */; };
+		F952DEB11DF335E7009D582E /* NationalPreserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952DEB01DF335E7009D582E /* NationalPreserve.swift */; };
 		F957387B1DF125F0009D1ABA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957387A1DF125F0009D1ABA /* DataService.swift */; };
 		F98753981DF1BF5A0083C88D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753971DF1BF5A0083C88D /* Location.swift */; };
 		F987539A1DF245280083C88D /* SitesFilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753991DF245280083C88D /* SitesFilterTableViewController.swift */; };
@@ -31,6 +33,8 @@
 		F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F922ACB21DF0E1D100F4FCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F922ACB41DF0E1D100F4FCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F952DEAE1DF335DB009D582E /* NationalPreserves.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalPreserves.csv; sourceTree = "<group>"; };
+		F952DEB01DF335E7009D582E /* NationalPreserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalPreserve.swift; sourceTree = "<group>"; };
 		F957387A1DF125F0009D1ABA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F98753971DF1BF5A0083C88D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F98753991DF245280083C88D /* SitesFilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesFilterTableViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			children = (
 				F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */,
 				F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */,
+				F952DEAE1DF335DB009D582E /* NationalPreserves.csv */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */,
 				F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */,
+				F952DEB01DF335E7009D582E /* NationalPreserve.swift */,
 				F98753971DF1BF5A0083C88D /* Location.swift */,
 			);
 			name = Models;
@@ -185,6 +191,7 @@
 			files = (
 				F9FE51541DF0E9CC00FDFF1A /* NationalMonuments.csv in Resources */,
 				F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */,
+				F952DEAF1DF335DB009D582E /* NationalPreserves.csv in Resources */,
 				F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */,
 				F922ACAE1DF0E1D100F4FCC0 /* Main.storyboard in Resources */,
 				F9FE51551DF0E9CC00FDFF1A /* NationalParks.csv in Resources */,
@@ -207,6 +214,7 @@
 				F9FE51601DF0ED9400FDFF1A /* NationalMonument.swift in Sources */,
 				F9FE515E1DF0ED5900FDFF1A /* NationalPark.swift in Sources */,
 				F957387B1DF125F0009D1ABA /* DataService.swift in Sources */,
+				F952DEB11DF335E7009D582E /* NationalPreserve.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

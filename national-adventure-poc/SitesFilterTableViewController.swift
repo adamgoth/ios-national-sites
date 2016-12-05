@@ -18,10 +18,8 @@ class SitesFilterTableViewController: UITableViewController {
         let defaults = UserDefaults.standard
         if let previousFilter = defaults.object(forKey: "filteredSiteTypes") as? [String] {
             let mappedSites = previousFilter.map { return DataService.SiteType(rawValue: $0)! }
-            print(mappedSites)
             filteredSiteTypes = mappedSites
         } else {
-            print("nah")
             filteredSiteTypes = DataService.allSiteTypes
         }
         

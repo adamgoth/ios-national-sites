@@ -14,13 +14,11 @@ class Location: NSObject, MKAnnotation {
     public let latitude: CLLocationDegrees
     public let longitude: CLLocationDegrees
     public let coordinate: CLLocationCoordinate2D
-    public let pinColor: UIColor
     
-    init(title: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees, pinColor: UIColor) {
+    init(title: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         self.title = title
         self.latitude = latitude
         self.longitude = longitude
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        self.pinColor = pinColor
     }
 }
