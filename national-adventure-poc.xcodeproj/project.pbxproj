@@ -12,6 +12,7 @@
 		F922ACAE1DF0E1D100F4FCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAC1DF0E1D100F4FCC0 /* Main.storyboard */; };
 		F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */; };
 		F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */; };
+		F951D0EE1DF5AF96002DE5BE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951D0ED1DF5AF96002DE5BE /* DetailViewController.swift */; };
 		F952DEAF1DF335DB009D582E /* NationalPreserves.csv in Resources */ = {isa = PBXBuildFile; fileRef = F952DEAE1DF335DB009D582E /* NationalPreserves.csv */; };
 		F952DEB11DF335E7009D582E /* NationalPreserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952DEB01DF335E7009D582E /* NationalPreserve.swift */; };
 		F957387B1DF125F0009D1ABA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957387A1DF125F0009D1ABA /* DataService.swift */; };
@@ -33,6 +34,7 @@
 		F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F922ACB21DF0E1D100F4FCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F922ACB41DF0E1D100F4FCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F951D0ED1DF5AF96002DE5BE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F952DEAE1DF335DB009D582E /* NationalPreserves.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalPreserves.csv; sourceTree = "<group>"; };
 		F952DEB01DF335E7009D582E /* NationalPreserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalPreserve.swift; sourceTree = "<group>"; };
 		F957387A1DF125F0009D1ABA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				F922ACAA1DF0E1D100F4FCC0 /* ViewController.swift */,
 				F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */,
 				F98753991DF245280083C88D /* SitesFilterTableViewController.swift */,
+				F951D0ED1DF5AF96002DE5BE /* DetailViewController.swift */,
 				F922ACAC1DF0E1D100F4FCC0 /* Main.storyboard */,
 				F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */,
 				F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */,
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F951D0EE1DF5AF96002DE5BE /* DetailViewController.swift in Sources */,
 				F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */,
 				F922ACAB1DF0E1D100F4FCC0 /* ViewController.swift in Sources */,
 				F98753981DF1BF5A0083C88D /* Location.swift in Sources */,

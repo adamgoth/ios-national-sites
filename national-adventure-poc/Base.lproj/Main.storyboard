@@ -40,11 +40,12 @@
                     <connections>
                         <outlet property="mapView" destination="xqB-Pf-H4c" id="1Jt-Kf-ROp"/>
                         <segue destination="piV-Lv-Re2" kind="show" identifier="showSitesFilter" id="XZM-bR-fJt"/>
+                        <segue destination="rln-aM-BP2" kind="show" identifier="showDetail" id="yNa-d7-6Fj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Znz-6W-n42" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="-275"/>
+            <point key="canvasLocation" x="1481" y="-415"/>
         </scene>
         <!--Sites Filter Table View Controller-->
         <scene sceneID="msO-NQ-1Nh">
@@ -72,7 +73,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imm-k6-I0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2620" y="34"/>
+            <point key="canvasLocation" x="2790" y="-828"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VZB-cw-bkt">
@@ -92,11 +93,11 @@
             </objects>
             <point key="canvasLocation" x="-343" y="53"/>
         </scene>
-        <!--Item 1-->
+        <!--Navigation Controller-->
         <scene sceneID="qex-zk-e9E">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gu-NY-8OF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="11V-6t-nOJ"/>
+                    <tabBarItem key="tabBarItem" id="11V-6t-nOJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uMO-4C-Nfc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -156,14 +157,34 @@
                     <navigationItem key="navigationItem" id="1KQ-Wk-iuU"/>
                     <connections>
                         <segue destination="piV-Lv-Re2" kind="show" identifier="showSitesFilter" id="mVT-Lc-eqR"/>
+                        <segue destination="rln-aM-BP2" kind="show" identifier="showDetail" id="XMp-Ri-d8k"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfG-Ux-ddu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="378"/>
+            <point key="canvasLocation" x="1481" y="502"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="1jw-rA-Hr9">
+            <objects>
+                <viewController id="rln-aM-BP2" customClass="DetailViewController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dlF-Lc-gkL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fy1-F6-RH0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CpQ-dN-QEt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kQ-gr-IYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="378"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mVT-Lc-eqR"/>
+        <segue reference="XMp-Ri-d8k"/>
+        <segue reference="XZM-bR-fJt"/>
     </inferredMetricsTieBreakers>
 </document>
