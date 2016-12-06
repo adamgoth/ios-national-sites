@@ -93,11 +93,11 @@
             </objects>
             <point key="canvasLocation" x="-343" y="53"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Map-->
         <scene sceneID="qex-zk-e9E">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gu-NY-8OF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="11V-6t-nOJ"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" selectedImage="map" id="11V-6t-nOJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uMO-4C-Nfc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -112,11 +112,11 @@
             </objects>
             <point key="canvasLocation" x="605.60000000000002" y="-274.81259370314842"/>
         </scene>
-        <!--Item 2-->
+        <!--List-->
         <scene sceneID="8O0-Rd-Prm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j2I-gw-0ad" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="qBE-o2-YPv"/>
+                    <tabBarItem key="tabBarItem" title="List" image="list" selectedImage="list" id="qBE-o2-YPv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VyQ-zz-war">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -183,6 +183,10 @@
             <point key="canvasLocation" x="2790" y="378"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list" width="25" height="25"/>
+        <image name="map" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XMp-Ri-d8k"/>
         <segue reference="XZM-bR-fJt"/>

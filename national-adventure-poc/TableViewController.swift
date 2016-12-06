@@ -18,7 +18,7 @@ class TableViewController: UITableViewController {
         
         setSitesList()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(filterSiteTypes))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "filter"), style: .plain, target: self, action: #selector(filterSiteTypes))
     }
     
     override func viewDidAppear(_ animated: Bool) {
