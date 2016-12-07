@@ -50,6 +50,7 @@ class TableViewController: UITableViewController {
         } else {
             selectedSiteTypes = DataService.allSiteTypes
         }
+        
         if selectedSiteTypes.contains(DataService.SiteType.NationalPark) {
             for park in DataService.allNationalParks {
                 sitesList.append(park)
@@ -65,6 +66,12 @@ class TableViewController: UITableViewController {
                 sitesList.append(park)
             }
         }
+        if selectedSiteTypes.contains(DataService.SiteType.NationalHistoricalPark) {
+            for park in DataService.allNationalHistoricalParks {
+                sitesList.append(park)
+            }
+        }
+        
         sitesList.sort(by: { $0.title! < $1.title! })
     }
     

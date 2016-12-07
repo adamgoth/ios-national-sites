@@ -16,11 +16,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         DataService.parseNationalParks()
         DataService.parseNationalMonuments()
         DataService.parseNationalPreserves()
-
+        DataService.parseNationalHistoricalParks()
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "filter"), style: .plain, target: self, action: #selector(filterSiteTypes))
         
         createAnnotations()
@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         } else {
             selectedSiteTypes = DataService.allSiteTypes
         }
+        
         if selectedSiteTypes.contains(DataService.SiteType.NationalPark) {
                 for park in DataService.allNationalParks {
                 let anno = park
@@ -61,6 +62,13 @@ class ViewController: UIViewController {
                 mapView.addAnnotation(anno)
             }
         }
+        if selectedSiteTypes.contains(DataService.SiteType.NationalHistoricalPark) {
+            for park in DataService.allNationalHistoricalParks {
+                let anno = park
+                mapView.addAnnotation(anno)
+            }
+        }
+        
     }
     
     func refreshAnnotations() {
@@ -90,6 +98,8 @@ extension ViewController: MKMapViewDelegate {
             view?.image = UIImage(named: "monument")
         case is NationalPreserve:
             view?.image = UIImage(named: "eagle")
+        case is NationalHistoricalPark:
+            view?.image = UIImage(named: "bench")
         default:
             view?.image = nil
         }

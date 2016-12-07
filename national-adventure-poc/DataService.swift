@@ -15,16 +15,19 @@ class DataService {
         case NationalPark = "National Parks"
         case NationalMonument = "National Monuments"
         case NationalPreserve = "National Preserves"
+        case NationalHistoricalPark = "National Historical Parks"
     }
     public static var allSiteTypes: [SiteType] { return [
         .NationalPark,
         .NationalMonument,
-        .NationalPreserve
+        .NationalPreserve,
+        .NationalHistoricalPark
         ]
     }
     public static var allNationalParks = [NationalPark]()
     public static var allNationalMonuments = [NationalMonument]()
     public static var allNationalPreserves = [NationalPreserve]()
+    public static var allNationalHistoricalParks = [NationalHistoricalPark]()
     
     class func parseNationalParks() {
         if let path = Bundle.main.path(forResource: "NationalParks", ofType: "csv") {
@@ -82,6 +85,27 @@ class DataService {
                     let preserve = NationalPreserve(title: name, latitude: latitude, longitude: longitude)
                     
                     DataService.allNationalPreserves.append(preserve)
+                }
+            } catch let error as NSError {
+                print(error.debugDescription)
+            }
+        }
+    }
+    
+    class func parseNationalHistoricalParks() {
+        if let path = Bundle.main.path(forResource: "NationalHistoricalParks", ofType: "csv") {
+            do {
+                let csv = try CSV(contentsOfURL: path)
+                let rows = csv.rows
+                
+                for row in rows {
+                    let name = row["Name"] ?? ""
+                    let latitude = CLLocationDegrees(row["Latitude"]!)!
+                    let longitude = CLLocationDegrees(row["Longitude"]!)!
+                    
+                    let park = NationalHistoricalPark(title: name, latitude: latitude, longitude: longitude)
+                    
+                    DataService.allNationalHistoricalParks.append(park)
                 }
             } catch let error as NSError {
                 print(error.debugDescription)
