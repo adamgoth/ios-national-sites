@@ -10,14 +10,14 @@ import UIKit
 
 class SitesFilterTableViewController: UITableViewController {
     
-    var filteredSiteTypes: [DataService.SiteType]!
+    var filteredSiteTypes: [Location.SiteType]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let defaults = UserDefaults.standard
         if let previousFilter = defaults.object(forKey: "filteredSiteTypes") as? [String] {
-            let mappedSites = previousFilter.map { return DataService.SiteType(rawValue: $0)! }
+            let mappedSites = previousFilter.map { return Location.SiteType(rawValue: $0)! }
             filteredSiteTypes = mappedSites
         } else {
             filteredSiteTypes = DataService.allSiteTypes

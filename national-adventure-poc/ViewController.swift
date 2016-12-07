@@ -35,34 +35,34 @@ class ViewController: UIViewController {
     }
     
     func createAnnotations() {
-        var selectedSiteTypes: [DataService.SiteType]!
+        var selectedSiteTypes: [Location.SiteType]!
         let defaults = UserDefaults.standard
         if let previousFilter = defaults.object(forKey: "filteredSiteTypes") as? [String] {
-            let mappedSites = previousFilter.map { return DataService.SiteType(rawValue: $0)! }
+            let mappedSites = previousFilter.map { return Location.SiteType(rawValue: $0)! }
             selectedSiteTypes = mappedSites
         } else {
             selectedSiteTypes = DataService.allSiteTypes
         }
         
-        if selectedSiteTypes.contains(DataService.SiteType.NationalPark) {
+        if selectedSiteTypes.contains(.NationalPark) {
                 for park in DataService.allNationalParks {
                 let anno = park
                 mapView.addAnnotation(anno)
             }
         }
-        if selectedSiteTypes.contains(DataService.SiteType.NationalMonument) {
+        if selectedSiteTypes.contains(.NationalMonument) {
             for park in DataService.allNationalMonuments {
                 let anno = park
                 mapView.addAnnotation(anno)
             }
         }
-        if selectedSiteTypes.contains(DataService.SiteType.NationalPreserve) {
+        if selectedSiteTypes.contains(.NationalPreserve) {
             for park in DataService.allNationalPreserves {
                 let anno = park
                 mapView.addAnnotation(anno)
             }
         }
-        if selectedSiteTypes.contains(DataService.SiteType.NationalHistoricalPark) {
+        if selectedSiteTypes.contains(.NationalHistoricalPark) {
             for park in DataService.allNationalHistoricalParks {
                 let anno = park
                 mapView.addAnnotation(anno)

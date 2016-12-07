@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var selectedSiteTypes: [DataService.SiteType]!
+    var selectedSiteTypes: [Location.SiteType]!
     var sitesList = [Location]()
     
     override func viewDidLoad() {
@@ -45,28 +45,28 @@ class TableViewController: UITableViewController {
         sitesList = [Location]()
         let defaults = UserDefaults.standard
         if let previousFilter = defaults.object(forKey: "filteredSiteTypes") as? [String] {
-            let mappedSites = previousFilter.map { return DataService.SiteType(rawValue: $0)! }
+            let mappedSites = previousFilter.map { return Location.SiteType(rawValue: $0)! }
             selectedSiteTypes = mappedSites
         } else {
             selectedSiteTypes = DataService.allSiteTypes
         }
         
-        if selectedSiteTypes.contains(DataService.SiteType.NationalPark) {
+        if selectedSiteTypes.contains(.NationalPark) {
             for park in DataService.allNationalParks {
                 sitesList.append(park)
             }
         }
-        if selectedSiteTypes.contains(DataService.SiteType.NationalMonument) {
+        if selectedSiteTypes.contains(.NationalMonument) {
             for park in DataService.allNationalMonuments {
                 sitesList.append(park)
             }
         }
-        if selectedSiteTypes.contains(DataService.SiteType.NationalPreserve) {
+        if selectedSiteTypes.contains(.NationalPreserve) {
             for park in DataService.allNationalPreserves {
                 sitesList.append(park)
             }
         }
-        if selectedSiteTypes.contains(DataService.SiteType.NationalHistoricalPark) {
+        if selectedSiteTypes.contains(.NationalHistoricalPark) {
             for park in DataService.allNationalHistoricalParks {
                 sitesList.append(park)
             }

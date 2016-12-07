@@ -11,13 +11,7 @@ import MapKit
 
 class DataService {
 
-    public enum SiteType: String {
-        case NationalPark = "National Parks"
-        case NationalMonument = "National Monuments"
-        case NationalPreserve = "National Preserves"
-        case NationalHistoricalPark = "National Historical Parks"
-    }
-    public static var allSiteTypes: [SiteType] { return [
+    public static var allSiteTypes: [Location.SiteType] { return [
         .NationalPark,
         .NationalMonument,
         .NationalPreserve,
@@ -40,7 +34,7 @@ class DataService {
                     let latitude = CLLocationDegrees(row["Latitude"]!)!
                     let longitude = CLLocationDegrees(row["Longitude"]!)!
                     
-                    let park = NationalPark(title: name, latitude: latitude, longitude: longitude)
+                    let park = NationalPark(title: name, latitude: latitude, longitude: longitude, siteType: .NationalPark)
                     
                     DataService.allNationalParks.append(park)
                 }
@@ -61,7 +55,7 @@ class DataService {
                     let latitude = CLLocationDegrees(row["Latitude"]!)!
                     let longitude = CLLocationDegrees(row["Longitude"]!)!
                     
-                    let monument = NationalMonument(title: name, latitude: latitude, longitude: longitude)
+                    let monument = NationalMonument(title: name, latitude: latitude, longitude: longitude, siteType: .NationalMonument)
                     
                     DataService.allNationalMonuments.append(monument)
                 }
@@ -82,7 +76,7 @@ class DataService {
                     let latitude = CLLocationDegrees(row["Latitude"]!)!
                     let longitude = CLLocationDegrees(row["Longitude"]!)!
                     
-                    let preserve = NationalPreserve(title: name, latitude: latitude, longitude: longitude)
+                    let preserve = NationalPreserve(title: name, latitude: latitude, longitude: longitude, siteType: .NationalPreserve)
                     
                     DataService.allNationalPreserves.append(preserve)
                 }
@@ -103,7 +97,7 @@ class DataService {
                     let latitude = CLLocationDegrees(row["Latitude"]!)!
                     let longitude = CLLocationDegrees(row["Longitude"]!)!
                     
-                    let park = NationalHistoricalPark(title: name, latitude: latitude, longitude: longitude)
+                    let park = NationalHistoricalPark(title: name, latitude: latitude, longitude: longitude, siteType: .NationalHistoricalPark)
                     
                     DataService.allNationalHistoricalParks.append(park)
                 }

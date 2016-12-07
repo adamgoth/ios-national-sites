@@ -14,11 +14,20 @@ class Location: NSObject, MKAnnotation {
     public let latitude: CLLocationDegrees
     public let longitude: CLLocationDegrees
     public let coordinate: CLLocationCoordinate2D
+    public let siteType: SiteType
     
-    init(title: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+    enum SiteType: String {
+        case NationalPark = "National Parks"
+        case NationalMonument = "National Monuments"
+        case NationalPreserve = "National Preserves"
+        case NationalHistoricalPark = "National Historical Parks"
+    }
+    
+    init(title: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees, siteType: SiteType) {
         self.title = title
         self.latitude = latitude
         self.longitude = longitude
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        self.siteType = siteType
     }
 }
