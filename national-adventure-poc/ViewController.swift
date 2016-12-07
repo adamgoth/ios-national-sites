@@ -15,6 +15,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        DataService.parseNationalParks()
+        DataService.parseNationalMonuments()
+        DataService.parseNationalPreserves()
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "filter"), style: .plain, target: self, action: #selector(filterSiteTypes))
         
