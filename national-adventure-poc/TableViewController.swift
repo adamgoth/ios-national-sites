@@ -52,22 +52,22 @@ class TableViewController: UITableViewController {
         }
         
         if selectedSiteTypes.contains(.NationalPark) {
-            for park in DataService.allNationalParks {
+            for park in DataService.allLocations.filter({ return $0.siteType == .NationalPark}) {
                 sitesList.append(park)
             }
         }
         if selectedSiteTypes.contains(.NationalMonument) {
-            for park in DataService.allNationalMonuments {
+            for park in DataService.allLocations.filter({ return $0.siteType == .NationalMonument}) {
                 sitesList.append(park)
             }
         }
         if selectedSiteTypes.contains(.NationalPreserve) {
-            for park in DataService.allNationalPreserves {
+            for park in DataService.allLocations.filter({ return $0.siteType == .NationalPreserve}) {
                 sitesList.append(park)
             }
         }
         if selectedSiteTypes.contains(.NationalHistoricalPark) {
-            for park in DataService.allNationalHistoricalParks {
+            for park in DataService.allLocations.filter({ return $0.siteType == .NationalHistoricalPark}) {
                 sitesList.append(park)
             }
         }

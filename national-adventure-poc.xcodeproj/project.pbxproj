@@ -13,15 +13,15 @@
 		F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */; };
 		F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */; };
 		F951D0EE1DF5AF96002DE5BE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951D0ED1DF5AF96002DE5BE /* DetailViewController.swift */; };
-		F952DEAF1DF335DB009D582E /* NationalPreserves.csv in Resources */ = {isa = PBXBuildFile; fileRef = F952DEAE1DF335DB009D582E /* NationalPreserves.csv */; };
+		F952DEAF1DF335DB009D582E /* National Preserves.csv in Resources */ = {isa = PBXBuildFile; fileRef = F952DEAE1DF335DB009D582E /* National Preserves.csv */; };
 		F952DEB11DF335E7009D582E /* NationalPreserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952DEB01DF335E7009D582E /* NationalPreserve.swift */; };
 		F957387B1DF125F0009D1ABA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957387A1DF125F0009D1ABA /* DataService.swift */; };
-		F96BF2FD1DF84B86002844AE /* NationalHistoricalParks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F96BF2FC1DF84B86002844AE /* NationalHistoricalParks.csv */; };
+		F96BF2FD1DF84B86002844AE /* National Historical Parks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F96BF2FC1DF84B86002844AE /* National Historical Parks.csv */; };
 		F96BF2FF1DF84D5C002844AE /* NationalHistoricalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BF2FE1DF84D5C002844AE /* NationalHistoricalPark.swift */; };
 		F98753981DF1BF5A0083C88D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753971DF1BF5A0083C88D /* Location.swift */; };
 		F987539A1DF245280083C88D /* SitesFilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753991DF245280083C88D /* SitesFilterTableViewController.swift */; };
-		F9FE51541DF0E9CC00FDFF1A /* NationalMonuments.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */; };
-		F9FE51551DF0E9CC00FDFF1A /* NationalParks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */; };
+		F9FE51541DF0E9CC00FDFF1A /* National Monuments.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51521DF0E9CC00FDFF1A /* National Monuments.csv */; };
+		F9FE51551DF0E9CC00FDFF1A /* National Parks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51531DF0E9CC00FDFF1A /* National Parks.csv */; };
 		F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51561DF0E9F600FDFF1A /* csv.swift */; };
 		F9FE51591DF0EA9200FDFF1A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */; };
 		F9FE515E1DF0ED5900FDFF1A /* NationalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */; };
@@ -37,15 +37,15 @@
 		F922ACB21DF0E1D100F4FCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F922ACB41DF0E1D100F4FCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F951D0ED1DF5AF96002DE5BE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		F952DEAE1DF335DB009D582E /* NationalPreserves.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalPreserves.csv; sourceTree = "<group>"; };
+		F952DEAE1DF335DB009D582E /* National Preserves.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Preserves.csv"; sourceTree = "<group>"; };
 		F952DEB01DF335E7009D582E /* NationalPreserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalPreserve.swift; sourceTree = "<group>"; };
 		F957387A1DF125F0009D1ABA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		F96BF2FC1DF84B86002844AE /* NationalHistoricalParks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalHistoricalParks.csv; sourceTree = "<group>"; };
+		F96BF2FC1DF84B86002844AE /* National Historical Parks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Historical Parks.csv"; sourceTree = "<group>"; };
 		F96BF2FE1DF84D5C002844AE /* NationalHistoricalPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalHistoricalPark.swift; sourceTree = "<group>"; };
 		F98753971DF1BF5A0083C88D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F98753991DF245280083C88D /* SitesFilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesFilterTableViewController.swift; sourceTree = "<group>"; };
-		F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalMonuments.csv; sourceTree = "<group>"; };
-		F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NationalParks.csv; sourceTree = "<group>"; };
+		F9FE51521DF0E9CC00FDFF1A /* National Monuments.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Monuments.csv"; sourceTree = "<group>"; };
+		F9FE51531DF0E9CC00FDFF1A /* National Parks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Parks.csv"; sourceTree = "<group>"; };
 		F9FE51561DF0E9F600FDFF1A /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalPark.swift; sourceTree = "<group>"; };
@@ -110,10 +110,10 @@
 		F9FE51501DF0E93400FDFF1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F96BF2FC1DF84B86002844AE /* NationalHistoricalParks.csv */,
-				F9FE51521DF0E9CC00FDFF1A /* NationalMonuments.csv */,
-				F9FE51531DF0E9CC00FDFF1A /* NationalParks.csv */,
-				F952DEAE1DF335DB009D582E /* NationalPreserves.csv */,
+				F96BF2FC1DF84B86002844AE /* National Historical Parks.csv */,
+				F9FE51521DF0E9CC00FDFF1A /* National Monuments.csv */,
+				F9FE51531DF0E9CC00FDFF1A /* National Parks.csv */,
+				F952DEAE1DF335DB009D582E /* National Preserves.csv */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -198,13 +198,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9FE51541DF0E9CC00FDFF1A /* NationalMonuments.csv in Resources */,
+				F9FE51541DF0E9CC00FDFF1A /* National Monuments.csv in Resources */,
 				F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */,
-				F952DEAF1DF335DB009D582E /* NationalPreserves.csv in Resources */,
+				F952DEAF1DF335DB009D582E /* National Preserves.csv in Resources */,
 				F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */,
-				F96BF2FD1DF84B86002844AE /* NationalHistoricalParks.csv in Resources */,
+				F96BF2FD1DF84B86002844AE /* National Historical Parks.csv in Resources */,
 				F922ACAE1DF0E1D100F4FCC0 /* Main.storyboard in Resources */,
-				F9FE51551DF0E9CC00FDFF1A /* NationalParks.csv in Resources */,
+				F9FE51551DF0E9CC00FDFF1A /* National Parks.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

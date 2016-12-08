@@ -16,10 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DataService.parseNationalParks()
-        DataService.parseNationalMonuments()
-        DataService.parseNationalPreserves()
-        DataService.parseNationalHistoricalParks()
+        DataService.parseLocations()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "filter"), style: .plain, target: self, action: #selector(filterSiteTypes))
         
@@ -45,25 +42,25 @@ class ViewController: UIViewController {
         }
         
         if selectedSiteTypes.contains(.NationalPark) {
-                for park in DataService.allNationalParks {
+            for park in DataService.allLocations.filter({ return $0.siteType == .NationalPark }) {
                 let anno = park
                 mapView.addAnnotation(anno)
             }
         }
         if selectedSiteTypes.contains(.NationalMonument) {
-            for park in DataService.allNationalMonuments {
+            for park in DataService.allLocations.filter({ return $0.siteType == .NationalMonument }) {
                 let anno = park
                 mapView.addAnnotation(anno)
             }
         }
         if selectedSiteTypes.contains(.NationalPreserve) {
-            for park in DataService.allNationalPreserves {
+            for park in DataService.allLocations.filter({ return $0.siteType == .NationalPreserve }) {
                 let anno = park
                 mapView.addAnnotation(anno)
             }
         }
         if selectedSiteTypes.contains(.NationalHistoricalPark) {
-            for park in DataService.allNationalHistoricalParks {
+            for park in DataService.allLocations.filter({ return $0.siteType == .NationalHistoricalPark }) {
                 let anno = park
                 mapView.addAnnotation(anno)
             }
@@ -83,6 +80,7 @@ extension ViewController: MKMapViewDelegate {
         let identifier = "pin"
 
         var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        let annotation = annotation as! Location
         
         if view == nil {
             view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
@@ -91,17 +89,15 @@ extension ViewController: MKMapViewDelegate {
             view?.annotation = annotation
         }
         
-        switch annotation {
-        case is NationalPark:
+        switch annotation.siteType {
+        case .NationalPark:
             view?.image = UIImage(named: "tree")
-        case is NationalMonument:
+        case .NationalMonument:
             view?.image = UIImage(named: "monument")
-        case is NationalPreserve:
+        case .NationalPreserve:
             view?.image = UIImage(named: "eagle")
-        case is NationalHistoricalPark:
+        case .NationalHistoricalPark:
             view?.image = UIImage(named: "bench")
-        default:
-            view?.image = nil
         }
         view?.frame.size = CGSize(width: 20.0, height: 20.0)
         
