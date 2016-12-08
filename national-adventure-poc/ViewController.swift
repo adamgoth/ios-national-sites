@@ -41,31 +41,12 @@ class ViewController: UIViewController {
             selectedSiteTypes = DataService.allSiteTypes
         }
         
-        if selectedSiteTypes.contains(.NationalPark) {
-            for park in DataService.allLocations.filter({ return $0.siteType == .NationalPark }) {
+        for siteType in selectedSiteTypes {
+            for park in DataService.allLocations.filter({ return $0.siteType == siteType }) {
                 let anno = park
                 mapView.addAnnotation(anno)
             }
         }
-        if selectedSiteTypes.contains(.NationalMonument) {
-            for park in DataService.allLocations.filter({ return $0.siteType == .NationalMonument }) {
-                let anno = park
-                mapView.addAnnotation(anno)
-            }
-        }
-        if selectedSiteTypes.contains(.NationalPreserve) {
-            for park in DataService.allLocations.filter({ return $0.siteType == .NationalPreserve }) {
-                let anno = park
-                mapView.addAnnotation(anno)
-            }
-        }
-        if selectedSiteTypes.contains(.NationalHistoricalPark) {
-            for park in DataService.allLocations.filter({ return $0.siteType == .NationalHistoricalPark }) {
-                let anno = park
-                mapView.addAnnotation(anno)
-            }
-        }
-        
     }
     
     func refreshAnnotations() {
