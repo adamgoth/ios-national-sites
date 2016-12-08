@@ -58,31 +58,24 @@ class ViewController: UIViewController {
 
 extension ViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let identifier = "pin"
-
-        var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-        let annotation = annotation as! Location
-        
-        if view == nil {
-            view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            view?.canShowCallout = true
-        } else {
-            view?.annotation = annotation
+        if let annotation = annotation as? Location {
+            let identifier = "pin"
+            var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            if view == nil {
+                view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view?.canShowCallout = true
+            } else {
+                view?.annotation = annotation
+            }
+            
+            view?.image = UIImage(named: annotation.siteType.rawValue)
+            
+            view?.frame.size = CGSize(width: 20.0, height: 20.0)
+            
+            return view
         }
         
-        switch annotation.siteType {
-        case .NationalPark:
-            view?.image = UIImage(named: "tree")
-        case .NationalMonument:
-            view?.image = UIImage(named: "monument")
-        case .NationalPreserve:
-            view?.image = UIImage(named: "eagle")
-        case .NationalHistoricalPark:
-            view?.image = UIImage(named: "bench")
-        }
-        view?.frame.size = CGSize(width: 20.0, height: 20.0)
-        
-        return view
+        return nil
     }
 }
 
