@@ -36,6 +36,15 @@ class TableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = sitesList[indexPath.row].title
+        cell.imageView?.image = UIImage(named: sitesList[indexPath.row].siteType.rawValue)
+        //resize image
+        let itemSize = CGSize(width: 20.0, height: 20.0)
+        UIGraphicsBeginImageContextWithOptions(itemSize, false, UIScreen.main.scale)
+        let imageRect = CGRect(x: 0, y: 0, width: itemSize.width, height: itemSize.height)
+        cell.imageView!.image?.draw(in: imageRect)
+        cell.imageView!.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        cell.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         return cell
     }
     
