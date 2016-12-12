@@ -39,6 +39,17 @@ class SitesFilterTableViewController: UITableViewController {
         
         cell.textLabel?.text = siteType.rawValue
         
+        cell.imageView?.image = UIImage(named: siteType.rawValue)
+        
+        //resize image
+        let itemSize = CGSize(width: 20.0, height: 20.0)
+        UIGraphicsBeginImageContextWithOptions(itemSize, false, UIScreen.main.scale)
+        let imageRect = CGRect(x: 0, y: 0, width: itemSize.width, height: itemSize.height)
+        cell.imageView!.image?.draw(in: imageRect)
+        cell.imageView!.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        cell.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        
         if filteredSiteTypes.contains(siteType) {
             cell.accessoryType = .checkmark
         } else {
