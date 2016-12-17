@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class TableViewController: UITableViewController {
     
@@ -37,6 +38,7 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = sitesList[indexPath.row].title
         cell.imageView?.image = UIImage(named: sitesList[indexPath.row].siteType.rawValue)
+        cell.accessoryType = .disclosureIndicator
         
         //resize image
         let itemSize = CGSize(width: 20.0, height: 20.0)
@@ -48,6 +50,10 @@ class TableViewController: UITableViewController {
         cell.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showGoogleResults(site: sitesList[indexPath.row].title!)
     }
     
     func filterSiteTypes() {
@@ -71,6 +77,16 @@ class TableViewController: UITableViewController {
         }
         
         sitesList.sort(by: { $0.title! < $1.title! })
+    }
+    
+    func showGoogleResults(site: String) {
+        let formattedURL = site.replacingOccurrences(of: " ", with: "_")
+        if let url = URL(string: "https://www.google.com/#q=\(formattedURL)") {
+            let vc = SFSafariViewController(url: url)
+            present(vc, animated: true)
+        } else {
+            print("An error occured while formatting the URL")
+        }
     }
     
 
