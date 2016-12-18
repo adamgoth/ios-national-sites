@@ -80,7 +80,7 @@ class TableViewController: UITableViewController {
     }
     
     func showGoogleResults(site: String) {
-        let formattedURL = site.replacingOccurrences(of: " ", with: "_")
+        let formattedURL = site.replacingOccurrences(of: " ", with: "%20")
         if let url = URL(string: "https://www.google.com/#q=\(formattedURL)") {
             let vc = SFSafariViewController(url: url)
             present(vc, animated: true)
