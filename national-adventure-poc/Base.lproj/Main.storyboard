@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EBf-zZ-fOp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EBf-zZ-fOp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Outdoor Explorer-->
         <scene sceneID="Ny3-8T-kh0">
             <objects>
                 <viewController id="AGy-FG-egd" customClass="ViewController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,9 @@
                             <constraint firstItem="xqB-Pf-H4c" firstAttribute="bottom" secondItem="ZZb-7X-2ha" secondAttribute="top" id="w6V-wc-6kk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kmi-im-KBJ"/>
+                    <navigationItem key="navigationItem" title="Outdoor Explorer" id="kmi-im-KBJ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Tbo-mt-MFp"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="xqB-Pf-H4c" id="1Jt-Kf-ROp"/>
                         <segue destination="piV-Lv-Re2" kind="show" identifier="showSitesFilter" id="XZM-bR-fJt"/>
@@ -131,7 +133,7 @@
             </objects>
             <point key="canvasLocation" x="605.60000000000002" y="378.26086956521743"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Outdoor Explorer-->
         <scene sceneID="NSU-aR-7py">
             <objects>
                 <tableViewController id="Znt-u3-RcI" customClass="TableViewController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,7 +156,9 @@
                             <outlet property="delegate" destination="Znt-u3-RcI" id="Pqe-Kb-rKl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1KQ-Wk-iuU"/>
+                    <navigationItem key="navigationItem" title="Outdoor Explorer" id="1KQ-Wk-iuU">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="y4w-tv-Zk0"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="piV-Lv-Re2" kind="show" identifier="showSitesFilter" id="mVT-Lc-eqR"/>
                         <segue destination="rln-aM-BP2" kind="show" identifier="showDetail" id="XMp-Ri-d8k"/>
@@ -189,6 +193,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XMp-Ri-d8k"/>
-        <segue reference="XZM-bR-fJt"/>
+        <segue reference="mVT-Lc-eqR"/>
     </inferredMetricsTieBreakers>
 </document>
