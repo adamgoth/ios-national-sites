@@ -21,6 +21,7 @@ class Location: NSObject, MKAnnotation {
         case NationalMonument = "National Monuments"
         case NationalPreserve = "National Preserves"
         case NationalHistoricalPark = "National Historical Parks"
+        case NationalHistoricSite = "National Historic Sites"
     }
     
     init(title: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees, siteType: SiteType) {

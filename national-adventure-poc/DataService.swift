@@ -17,7 +17,8 @@ class DataService {
         .NationalPark,
         .NationalMonument,
         .NationalPreserve,
-        .NationalHistoricalPark
+        .NationalHistoricalPark,
+        .NationalHistoricSite
         ]
     }
     
