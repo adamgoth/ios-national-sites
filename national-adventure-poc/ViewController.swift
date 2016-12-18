@@ -13,6 +13,8 @@ import SafariServices
 class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
+    
+    var selectedSiteTypes: [Location.SiteType]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,14 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        refreshAnnotations()
+        //only refresh annotations if filter changed
+        let defaults = UserDefaults.standard
+        if let previousFilter = defaults.object(forKey: "filteredSiteTypes") as? [String] {
+            let mappedSites = previousFilter.map { return Location.SiteType(rawValue: $0)! }
+            if selectedSiteTypes! != mappedSites {
+                refreshAnnotations()
+            }
+        }
     }
     
     func filterSiteTypes() {
@@ -35,7 +44,6 @@ class ViewController: UIViewController {
     }
     
     func createAnnotations() {
-        var selectedSiteTypes: [Location.SiteType]!
         let defaults = UserDefaults.standard
         if let previousFilter = defaults.object(forKey: "filteredSiteTypes") as? [String] {
             let mappedSites = previousFilter.map { return Location.SiteType(rawValue: $0)! }
@@ -44,10 +52,12 @@ class ViewController: UIViewController {
             selectedSiteTypes = DataService.allSiteTypes
         }
         
-        for siteType in selectedSiteTypes {
-            for park in DataService.allLocations.filter({ return $0.siteType == siteType }) {
-                let anno = park
-                mapView.addAnnotation(anno)
+        if let siteTypes = selectedSiteTypes {
+            for siteType in siteTypes {
+                for park in DataService.allLocations.filter({ return $0.siteType == siteType }) {
+                    let anno = park
+                    mapView.addAnnotation(anno)
+                }
             }
         }
     }
