@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import SafariServices
 
 class ViewController: UIViewController {
 
@@ -55,6 +56,16 @@ class ViewController: UIViewController {
         mapView.removeAnnotations(mapView.annotations)
         createAnnotations()
     }
+    
+    func showGoogleResults(site: String) {
+        let formattedURL = site.replacingOccurrences(of: " ", with: "%20")
+        if let url = URL(string: "https://www.google.com/#q=\(formattedURL)") {
+            let vc = SFSafariViewController(url: url)
+            present(vc, animated: true)
+        } else {
+            print("An error occured while formatting the URL")
+        }
+    }
 
 }
 
@@ -74,10 +85,20 @@ extension ViewController: MKMapViewDelegate {
             
             view?.frame.size = CGSize(width: 20.0, height: 20.0)
             
+            view?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            
             return view
         }
         
         return nil
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if control == view.rightCalloutAccessoryView {
+            if let annotation = view.annotation {
+                showGoogleResults(site: annotation.title!!)
+            }
+        }
     }
 }
 
