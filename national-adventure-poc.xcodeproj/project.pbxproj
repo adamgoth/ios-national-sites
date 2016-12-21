@@ -18,6 +18,9 @@
 		F957387B1DF125F0009D1ABA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957387A1DF125F0009D1ABA /* DataService.swift */; };
 		F96BF2FD1DF84B86002844AE /* National Historical Parks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F96BF2FC1DF84B86002844AE /* National Historical Parks.csv */; };
 		F96BF2FF1DF84D5C002844AE /* NationalHistoricalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BF2FE1DF84D5C002844AE /* NationalHistoricalPark.swift */; };
+		F9784EA91E09E78F002AEC78 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9784EA81E09E78F002AEC78 /* TabBarController.swift */; };
+		F9784EAB1E09E847002AEC78 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9784EAA1E09E847002AEC78 /* Constants.swift */; };
+		F9784EAD1E09F1B5002AEC78 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9784EAC1E09F1B5002AEC78 /* NavigationController.swift */; };
 		F98753981DF1BF5A0083C88D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753971DF1BF5A0083C88D /* Location.swift */; };
 		F987539A1DF245280083C88D /* SitesFilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753991DF245280083C88D /* SitesFilterTableViewController.swift */; };
 		F9BAC91F1E07336E00418383 /* National Historic Sites.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9BAC91E1E07336E00418383 /* National Historic Sites.csv */; };
@@ -43,6 +46,9 @@
 		F957387A1DF125F0009D1ABA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F96BF2FC1DF84B86002844AE /* National Historical Parks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Historical Parks.csv"; sourceTree = "<group>"; };
 		F96BF2FE1DF84D5C002844AE /* NationalHistoricalPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalHistoricalPark.swift; sourceTree = "<group>"; };
+		F9784EA81E09E78F002AEC78 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F9784EAA1E09E847002AEC78 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F9784EAC1E09F1B5002AEC78 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		F98753971DF1BF5A0083C88D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F98753991DF245280083C88D /* SitesFilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesFilterTableViewController.swift; sourceTree = "<group>"; };
 		F9BAC91E1E07336E00418383 /* National Historic Sites.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Historic Sites.csv"; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 				F9FE51511DF0E93B00FDFF1A /* Utilities */,
 				F9FE51501DF0E93400FDFF1A /* Resources */,
 				F922ACA81DF0E1D100F4FCC0 /* AppDelegate.swift */,
+				F9784EA81E09E78F002AEC78 /* TabBarController.swift */,
+				F9784EAC1E09F1B5002AEC78 /* NavigationController.swift */,
 				F922ACAA1DF0E1D100F4FCC0 /* ViewController.swift */,
 				F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */,
 				F98753991DF245280083C88D /* SitesFilterTableViewController.swift */,
@@ -125,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				F9FE51561DF0E9F600FDFF1A /* csv.swift */,
+				F9784EAA1E09E847002AEC78 /* Constants.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -220,15 +229,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F951D0EE1DF5AF96002DE5BE /* DetailViewController.swift in Sources */,
+				F9784EAB1E09E847002AEC78 /* Constants.swift in Sources */,
 				F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */,
 				F922ACAB1DF0E1D100F4FCC0 /* ViewController.swift in Sources */,
 				F98753981DF1BF5A0083C88D /* Location.swift in Sources */,
 				F987539A1DF245280083C88D /* SitesFilterTableViewController.swift in Sources */,
 				F922ACA91DF0E1D100F4FCC0 /* AppDelegate.swift in Sources */,
 				F9FE51591DF0EA9200FDFF1A /* TableViewController.swift in Sources */,
+				F9784EAD1E09F1B5002AEC78 /* NavigationController.swift in Sources */,
 				F9FE51601DF0ED9400FDFF1A /* NationalMonument.swift in Sources */,
 				F9FE515E1DF0ED5900FDFF1A /* NationalPark.swift in Sources */,
 				F96BF2FF1DF84D5C002844AE /* NationalHistoricalPark.swift in Sources */,
+				F9784EA91E09E78F002AEC78 /* TabBarController.swift in Sources */,
 				F957387B1DF125F0009D1ABA /* DataService.swift in Sources */,
 				F952DEB11DF335E7009D582E /* NationalPreserve.swift in Sources */,
 			);

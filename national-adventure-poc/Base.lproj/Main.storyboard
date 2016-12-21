@@ -80,7 +80,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="VZB-cw-bkt">
             <objects>
-                <tabBarController id="EBf-zZ-fOp" sceneMemberID="viewController">
+                <tabBarController id="EBf-zZ-fOp" customClass="TabBarController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hYe-iL-i2t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -98,7 +98,7 @@
         <!--Map-->
         <scene sceneID="qex-zk-e9E">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gu-NY-8OF" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gu-NY-8OF" customClass="NavigationController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="map" selectedImage="map" id="11V-6t-nOJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uMO-4C-Nfc">
@@ -117,7 +117,7 @@
         <!--List-->
         <scene sceneID="8O0-Rd-Prm">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j2I-gw-0ad" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j2I-gw-0ad" customClass="NavigationController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" image="list" selectedImage="list" id="qBE-o2-YPv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VyQ-zz-war">
@@ -192,7 +192,7 @@
         <image name="map" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XMp-Ri-d8k"/>
-        <segue reference="mVT-Lc-eqR"/>
+        <segue reference="XZM-bR-fJt"/>
+        <segue reference="yNa-d7-6Fj"/>
     </inferredMetricsTieBreakers>
 </document>
