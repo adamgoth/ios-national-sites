@@ -15,7 +15,7 @@ class NavigationController: UINavigationController {
 
         self.navigationBar.barTintColor = forestGreen
         self.navigationBar.tintColor = UIColor.white
-        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white, NSFontAttributeName: UIFont(name: "OpenSans", size: 20)!]
     }
 
 }

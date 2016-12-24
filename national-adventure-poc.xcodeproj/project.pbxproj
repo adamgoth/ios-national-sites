@@ -25,6 +25,7 @@
 		F987539A1DF245280083C88D /* SitesFilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98753991DF245280083C88D /* SitesFilterTableViewController.swift */; };
 		F9B071041E0B02F700AA8B13 /* Campsites.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9B071031E0B02F700AA8B13 /* Campsites.csv */; };
 		F9BAC91F1E07336E00418383 /* National Historic Sites.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9BAC91E1E07336E00418383 /* National Historic Sites.csv */; };
+		F9F9298D1E0ED3F0001483B6 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9F9298C1E0ED3F0001483B6 /* OpenSans-Regular.ttf */; };
 		F9FE51541DF0E9CC00FDFF1A /* National Monuments.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51521DF0E9CC00FDFF1A /* National Monuments.csv */; };
 		F9FE51551DF0E9CC00FDFF1A /* National Parks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51531DF0E9CC00FDFF1A /* National Parks.csv */; };
 		F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51561DF0E9F600FDFF1A /* csv.swift */; };
@@ -54,6 +55,7 @@
 		F98753991DF245280083C88D /* SitesFilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesFilterTableViewController.swift; sourceTree = "<group>"; };
 		F9B071031E0B02F700AA8B13 /* Campsites.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Campsites.csv; sourceTree = "<group>"; };
 		F9BAC91E1E07336E00418383 /* National Historic Sites.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Historic Sites.csv"; sourceTree = "<group>"; };
+		F9F9298C1E0ED3F0001483B6 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		F9FE51521DF0E9CC00FDFF1A /* National Monuments.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Monuments.csv"; sourceTree = "<group>"; };
 		F9FE51531DF0E9CC00FDFF1A /* National Parks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Parks.csv"; sourceTree = "<group>"; };
 		F9FE51561DF0E9F600FDFF1A /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				F952DEAE1DF335DB009D582E /* National Preserves.csv */,
 				F9BAC91E1E07336E00418383 /* National Historic Sites.csv */,
 				F9B071031E0B02F700AA8B13 /* Campsites.csv */,
+				F9F9298C1E0ED3F0001483B6 /* OpenSans-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F9298D1E0ED3F0001483B6 /* OpenSans-Regular.ttf in Resources */,
 				F9FE51541DF0E9CC00FDFF1A /* National Monuments.csv in Resources */,
 				F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */,
 				F952DEAF1DF335DB009D582E /* National Preserves.csv in Resources */,

@@ -101,7 +101,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gu-NY-8OF" customClass="NavigationController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="map" selectedImage="map" id="11V-6t-nOJ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uMO-4C-Nfc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uMO-4C-Nfc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -120,7 +120,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j2I-gw-0ad" customClass="NavigationController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" image="list" selectedImage="list" id="qBE-o2-YPv"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VyQ-zz-war">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VyQ-zz-war">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
