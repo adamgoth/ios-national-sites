@@ -19,6 +19,8 @@ class TabBarController: UITabBarController {
         // Sets the default color of the background of the UITabBar
         UITabBar.appearance().barTintColor = forestGreen
         
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "OpenSans", size: 10)!], for: .normal)
+        
     }
 
 }

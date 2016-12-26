@@ -35,6 +35,7 @@ class TableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = sitesList[indexPath.row].title
+        cell.textLabel?.font = UIFont(name: "OpenSans", size: 15)
         cell.imageView?.image = UIImage(named: sitesList[indexPath.row].siteType.rawValue)
         cell.accessoryType = .disclosureIndicator
         
