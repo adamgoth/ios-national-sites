@@ -15,9 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     var selectedSiteTypes: [Location.SiteType]?
+    
+    let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationAuthStatus()
         
         DataService.parseLocations()
         
@@ -34,6 +38,14 @@ class ViewController: UIViewController {
             if selectedSiteTypes! != mappedSites {
                 refreshAnnotations()
             }
+        }
+    }
+    
+    func locationAuthStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        } else {
+            locationManager.requestWhenInUseAuthorization()
         }
     }
     
@@ -106,6 +118,12 @@ extension ViewController: MKMapViewDelegate {
             if let annotation = view.annotation {
                 showGoogleResults(site: annotation.title!!)
             }
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        if let location = userLocation.location {
+            print(location)
         }
     }
 }

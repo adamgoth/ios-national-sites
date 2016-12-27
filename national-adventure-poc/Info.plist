@@ -47,5 +47,7 @@
 	<array>
 		<string>OpenSans-Regular.ttf</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is needed to find nearby sites</string>
 </dict>
 </plist>
