@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var selectedSiteTypes: [Location.SiteType]?
     
     let locationManager = CLLocationManager()
+    var userLocation: CLLocation?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,11 @@ class ViewController: UIViewController {
         } else {
             locationManager.requestWhenInUseAuthorization()
         }
+    }
+    
+    func centerMapOnLocation() {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(userLocation!.coordinate, 800000.0, 800000.0)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
     
     func filterSiteTypes() {
@@ -122,8 +128,10 @@ extension ViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        if let location = userLocation.location {
-            print(location)
+        if self.userLocation == nil {
+            self.userLocation = userLocation.location
+            centerMapOnLocation()
+            print("\(userLocation.location)")
         }
     }
 }
