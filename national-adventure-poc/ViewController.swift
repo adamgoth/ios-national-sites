@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "filter"), style: .plain, target: self, action: #selector(filterSiteTypes))
         
         createAnnotations()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -92,6 +93,23 @@ class ViewController: UIViewController {
             print("An error occured while formatting the URL")
         }
     }
+    
+    func getDistanceFromUser(_ locationA: CLLocation, locationB: CLLocation) -> Int {
+        let distanceInMeters = locationA.distance(from: locationB)
+        let distanceInMiles = distanceInMeters * 0.000621371
+        return Int(round(distanceInMiles))
+    }
+    
+    func addDistanceFromUserToLocation() {
+        if let userLocation = self.userLocation {
+            for location in DataService.allLocations {
+                let distance = getDistanceFromUser(userLocation, locationB: CLLocation(latitude: location.latitude, longitude: location.longitude))
+                location.distanceFromUser = distance
+            }
+        } else {
+            print("No user location available to calculate distance")
+        }
+    }
 
 }
 
@@ -131,6 +149,7 @@ extension ViewController: MKMapViewDelegate {
         if self.userLocation == nil {
             self.userLocation = userLocation.location
             centerMapOnLocation()
+            addDistanceFromUserToLocation()
             print("\(userLocation.location)")
         }
     }

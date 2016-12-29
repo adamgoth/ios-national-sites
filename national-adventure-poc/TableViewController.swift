@@ -39,6 +39,7 @@ class TableViewController: UITableViewController {
         cell.imageView?.image = UIImage(named: sitesList[indexPath.row].siteType.rawValue)
         cell.accessoryType = .disclosureIndicator
         
+        
         //resize image
         let itemSize = CGSize(width: 20.0, height: 20.0)
         UIGraphicsBeginImageContextWithOptions(itemSize, false, UIScreen.main.scale)
@@ -75,7 +76,11 @@ class TableViewController: UITableViewController {
             }
         }
         
-        sitesList.sort(by: { $0.title! < $1.title! })
+        if sitesList.first?.distanceFromUser != nil {
+            sitesList.sort(by: { $0.distanceFromUser! < $1.distanceFromUser! })
+        } else {
+            sitesList.sort(by: { $0.title! < $1.title! })
+        }
     }
     
     func showGoogleResults(site: String) {
@@ -88,5 +93,4 @@ class TableViewController: UITableViewController {
         }
     }
     
-
 }

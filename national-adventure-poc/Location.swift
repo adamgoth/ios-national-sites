@@ -15,6 +15,7 @@ class Location: NSObject, MKAnnotation {
     public let longitude: CLLocationDegrees
     public let coordinate: CLLocationCoordinate2D
     public let siteType: SiteType
+    public var distanceFromUser: Int?
     
     enum SiteType: String {
         case NationalPark = "National Parks"
