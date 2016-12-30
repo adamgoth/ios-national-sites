@@ -19,7 +19,8 @@ class DataService {
         .NationalPreserve,
         .NationalHistoricalPark,
         .NationalHistoricSite,
-        .Campsite
+        .Campsite,
+        .Colorado14er
         ]
     }
     

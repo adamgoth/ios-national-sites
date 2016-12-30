@@ -12,6 +12,7 @@
 		F922ACAE1DF0E1D100F4FCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAC1DF0E1D100F4FCC0 /* Main.storyboard */; };
 		F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */; };
 		F922ACB31DF0E1D100F4FCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922ACB11DF0E1D100F4FCC0 /* LaunchScreen.storyboard */; };
+		F948E7841E15AE5500D08BFE /* Colorado 14ers.csv in Resources */ = {isa = PBXBuildFile; fileRef = F948E7831E15AE5500D08BFE /* Colorado 14ers.csv */; };
 		F951D0EE1DF5AF96002DE5BE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951D0ED1DF5AF96002DE5BE /* DetailViewController.swift */; };
 		F952DEAF1DF335DB009D582E /* National Preserves.csv in Resources */ = {isa = PBXBuildFile; fileRef = F952DEAE1DF335DB009D582E /* National Preserves.csv */; };
 		F952DEB11DF335E7009D582E /* NationalPreserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952DEB01DF335E7009D582E /* NationalPreserve.swift */; };
@@ -42,6 +43,7 @@
 		F922ACAF1DF0E1D100F4FCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F922ACB21DF0E1D100F4FCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F922ACB41DF0E1D100F4FCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F948E7831E15AE5500D08BFE /* Colorado 14ers.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Colorado 14ers.csv"; sourceTree = "<group>"; };
 		F951D0ED1DF5AF96002DE5BE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F952DEAE1DF335DB009D582E /* National Preserves.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Preserves.csv"; sourceTree = "<group>"; };
 		F952DEB01DF335E7009D582E /* NationalPreserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalPreserve.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				F952DEAE1DF335DB009D582E /* National Preserves.csv */,
 				F9BAC91E1E07336E00418383 /* National Historic Sites.csv */,
 				F9B071031E0B02F700AA8B13 /* Campsites.csv */,
+				F948E7831E15AE5500D08BFE /* Colorado 14ers.csv */,
 				F9F9298C1E0ED3F0001483B6 /* OpenSans-Regular.ttf */,
 			);
 			name = Resources;
@@ -223,6 +226,7 @@
 				F922ACB01DF0E1D100F4FCC0 /* Assets.xcassets in Resources */,
 				F96BF2FD1DF84B86002844AE /* National Historical Parks.csv in Resources */,
 				F922ACAE1DF0E1D100F4FCC0 /* Main.storyboard in Resources */,
+				F948E7841E15AE5500D08BFE /* Colorado 14ers.csv in Resources */,
 				F9B071041E0B02F700AA8B13 /* Campsites.csv in Resources */,
 				F9BAC91F1E07336E00418383 /* National Historic Sites.csv in Resources */,
 				F9FE51551DF0E9CC00FDFF1A /* National Parks.csv in Resources */,

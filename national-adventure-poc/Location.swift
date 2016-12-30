@@ -24,6 +24,7 @@ class Location: NSObject, MKAnnotation {
         case NationalHistoricalPark = "National Historical Parks"
         case NationalHistoricSite = "National Historic Sites"
         case Campsite = "Campsites"
+        case Colorado14er = "Colorado 14ers"
     }
     
     init(title: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees, siteType: SiteType) {
