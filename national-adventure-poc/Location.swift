@@ -23,7 +23,6 @@ class Location: NSObject, MKAnnotation {
         case NationalPreserve = "National Preserves"
         case NationalHistoricalPark = "National Historical Parks"
         case NationalHistoricSite = "National Historic Sites"
-        case Campsite = "Campsites"
         case Colorado14er = "Colorado 14ers"
     }
     
