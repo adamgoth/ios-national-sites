@@ -15,10 +15,8 @@
 		F948E7841E15AE5500D08BFE /* Colorado 14ers.csv in Resources */ = {isa = PBXBuildFile; fileRef = F948E7831E15AE5500D08BFE /* Colorado 14ers.csv */; };
 		F951D0EE1DF5AF96002DE5BE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951D0ED1DF5AF96002DE5BE /* DetailViewController.swift */; };
 		F952DEAF1DF335DB009D582E /* National Preserves.csv in Resources */ = {isa = PBXBuildFile; fileRef = F952DEAE1DF335DB009D582E /* National Preserves.csv */; };
-		F952DEB11DF335E7009D582E /* NationalPreserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952DEB01DF335E7009D582E /* NationalPreserve.swift */; };
 		F957387B1DF125F0009D1ABA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957387A1DF125F0009D1ABA /* DataService.swift */; };
 		F96BF2FD1DF84B86002844AE /* National Historical Parks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F96BF2FC1DF84B86002844AE /* National Historical Parks.csv */; };
-		F96BF2FF1DF84D5C002844AE /* NationalHistoricalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BF2FE1DF84D5C002844AE /* NationalHistoricalPark.swift */; };
 		F9784EA91E09E78F002AEC78 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9784EA81E09E78F002AEC78 /* TabBarController.swift */; };
 		F9784EAB1E09E847002AEC78 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9784EAA1E09E847002AEC78 /* Constants.swift */; };
 		F9784EAD1E09F1B5002AEC78 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9784EAC1E09F1B5002AEC78 /* NavigationController.swift */; };
@@ -30,8 +28,6 @@
 		F9FE51551DF0E9CC00FDFF1A /* National Parks.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9FE51531DF0E9CC00FDFF1A /* National Parks.csv */; };
 		F9FE51571DF0E9F600FDFF1A /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51561DF0E9F600FDFF1A /* csv.swift */; };
 		F9FE51591DF0EA9200FDFF1A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */; };
-		F9FE515E1DF0ED5900FDFF1A /* NationalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */; };
-		F9FE51601DF0ED9400FDFF1A /* NationalMonument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,10 +41,8 @@
 		F948E7831E15AE5500D08BFE /* Colorado 14ers.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Colorado 14ers.csv"; sourceTree = "<group>"; };
 		F951D0ED1DF5AF96002DE5BE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F952DEAE1DF335DB009D582E /* National Preserves.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Preserves.csv"; sourceTree = "<group>"; };
-		F952DEB01DF335E7009D582E /* NationalPreserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalPreserve.swift; sourceTree = "<group>"; };
 		F957387A1DF125F0009D1ABA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F96BF2FC1DF84B86002844AE /* National Historical Parks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Historical Parks.csv"; sourceTree = "<group>"; };
-		F96BF2FE1DF84D5C002844AE /* NationalHistoricalPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalHistoricalPark.swift; sourceTree = "<group>"; };
 		F9784EA81E09E78F002AEC78 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F9784EAA1E09E847002AEC78 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F9784EAC1E09F1B5002AEC78 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -60,8 +54,6 @@
 		F9FE51531DF0E9CC00FDFF1A /* National Parks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "National Parks.csv"; sourceTree = "<group>"; };
 		F9FE51561DF0E9F600FDFF1A /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		F9FE51581DF0EA9200FDFF1A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalPark.swift; sourceTree = "<group>"; };
-		F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalMonument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,11 +139,7 @@
 		F9FE515A1DF0EC5E00FDFF1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F9FE515D1DF0ED5900FDFF1A /* NationalPark.swift */,
-				F9FE515F1DF0ED9400FDFF1A /* NationalMonument.swift */,
-				F952DEB01DF335E7009D582E /* NationalPreserve.swift */,
 				F98753971DF1BF5A0083C88D /* Location.swift */,
-				F96BF2FE1DF84D5C002844AE /* NationalHistoricalPark.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -245,12 +233,8 @@
 				F922ACA91DF0E1D100F4FCC0 /* AppDelegate.swift in Sources */,
 				F9FE51591DF0EA9200FDFF1A /* TableViewController.swift in Sources */,
 				F9784EAD1E09F1B5002AEC78 /* NavigationController.swift in Sources */,
-				F9FE51601DF0ED9400FDFF1A /* NationalMonument.swift in Sources */,
-				F9FE515E1DF0ED5900FDFF1A /* NationalPark.swift in Sources */,
-				F96BF2FF1DF84D5C002844AE /* NationalHistoricalPark.swift in Sources */,
 				F9784EA91E09E78F002AEC78 /* TabBarController.swift in Sources */,
 				F957387B1DF125F0009D1ABA /* DataService.swift in Sources */,
-				F952DEB11DF335E7009D582E /* NationalPreserve.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
