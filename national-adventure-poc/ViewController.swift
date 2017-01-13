@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     var userLocation: CLLocation?
-
+    //var userLocation: CLLocation? = CLLocation(latitude: 39.7, longitude: -104.7)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

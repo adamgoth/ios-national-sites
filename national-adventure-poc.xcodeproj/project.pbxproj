@@ -176,7 +176,7 @@
 				TargetAttributes = {
 					F922ACA41DF0E1D100F4FCC0 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = M685F39Y73;
+						DevelopmentTeam = 98Q85W7SW2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -357,10 +357,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M685F39Y73;
+				DEVELOPMENT_TEAM = 98Q85W7SW2;
 				INFOPLIST_FILE = "national-adventure-poc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adamgoth.national-adventure-poc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamgoth.outdoorexplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -370,10 +371,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M685F39Y73;
+				DEVELOPMENT_TEAM = 98Q85W7SW2;
 				INFOPLIST_FILE = "national-adventure-poc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adamgoth.national-adventure-poc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamgoth.outdoorexplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

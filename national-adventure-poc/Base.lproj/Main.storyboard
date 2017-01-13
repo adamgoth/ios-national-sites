@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,7 +66,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jpu-Na-sCO" id="Iov-yJ-ePt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -104,7 +103,7 @@
         <scene sceneID="qex-zk-e9E">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gu-NY-8OF" customClass="NavigationController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" image="map" selectedImage="map" id="11V-6t-nOJ"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="11V-6t-nOJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uMO-4C-Nfc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -123,7 +122,7 @@
         <scene sceneID="8O0-Rd-Prm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j2I-gw-0ad" customClass="NavigationController" customModule="national_adventure_poc" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" image="list" selectedImage="list" id="qBE-o2-YPv"/>
+                    <tabBarItem key="tabBarItem" title="List" id="qBE-o2-YPv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VyQ-zz-war">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -151,18 +150,18 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Hs-qs-pLk" id="URI-k2-oUb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YBE-Ea-9tI">
-                                            <rect key="frame" x="15" y="4" width="30" height="21"/>
+                                            <rect key="frame" x="15" y="4" width="30" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="038-C9-ek0">
-                                            <rect key="frame" x="15" y="25" width="40" height="15"/>
+                                            <rect key="frame" x="15" y="24.5" width="39.5" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="11"/>
                                             <nil key="textColor"/>
@@ -208,10 +207,6 @@
             <point key="canvasLocation" x="2790" y="378"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="list" width="25" height="25"/>
-        <image name="map" width="25" height="25"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XMp-Ri-d8k"/>
         <segue reference="mVT-Lc-eqR"/>
